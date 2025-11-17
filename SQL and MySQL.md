@@ -1,7 +1,18 @@
 # SQL and MySQL
 
+## what is relational database?
+
+A relational database organizes data into tables with predefined relationships, making it easy to access and manage related information. It uses rows to represent records and columns to represent attributes, with unique identifiers (keys) to link tables together logically. This structure is widely used, flexible, and efficient for storing, retrieving, and managing data, often using a language like SQL.
+
+---
 ## What is ACID? How do we achieve it in SQL?
 **ACID** stands for **Atomicity, Consistency, Isolation, Durability.** These properties gurantee *reliable transactions* in relational databases like MySQL, PostgreSQL, Orcle, etc.
+
+>"ACID properties guarantee reliable transaction processing.
+Atomicity ensures all-or-nothing execution,
+Consistency ensures rule compliance,
+Isolation ensures correct behavior under concurrency,
+and Durability ensures committed data persists even after failures."
 
 ### A → Atomicity
 ***A transaction must completed fully or not at all.***  
@@ -71,3 +82,10 @@ Through following we can achieves it:
 Example:
 * In low level, MySQL InnoDB engine stores changes in redo logs → after crash, it replays logs automatically. 
 * MySQL Replication in higher level
+
+---
+what is relationship? How many types of relationships present in RDBMS? 
+
+A database relationship is a logical connection between two or more database tables, based on a shared data field, that links related information.
+
+
